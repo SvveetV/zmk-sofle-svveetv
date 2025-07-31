@@ -68,7 +68,7 @@
 &kp TAB     &none   &none   &none   &none   &none      &kp DOWN_ARROW  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp MINUS   &none            &kp RBKT
 &kp LSHFT   &none   &none   &none   &none   &none      &kp MOVE_LEFT   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS    &none            &none
 &kp LCTRL   &none   &none   &none   &none   &none      &kp MOVE_RIGHT  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp FSLH    &kp F11          &kp F12
-&kp C_MUTE  &none   &none   &none   &none   &kp SPACE  &kp ENTER       &kp SPACE  &kp ENTER  &kp KP_N0  &kp KP_DOT  &kp KP_MULTIPLY
+&none       &none   &none   &none   &none   &kp SPACE  &kp ENTER       &kp SPACE  &kp ENTER  &kp KP_N0  &kp KP_DOT  &kp KP_MULTIPLY
             >;
 
             display-name = "layer1";
@@ -77,11 +77,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
-&studio_unlock      &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
+&none     &none  &none  &none          &none  &none  &mmv MOVE_UP     &none  &none  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &bt BT_SEL 0    &bt BT_SEL 1
+&none     &none  &none  &none          &none  &none  &mmv MOVE_DOWN   &none  &none  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &bt BT_SEL 2    &bt BT_SEL 3
+&kp CAPS  &none  &none  &none          &none  &none  &mmv MOVE_LEFT   &none  &none  &rgb_ug RGB_DPD  &rgb_ug RGB_SPI  &bt BT_SEL 4    &bt BT_CLR  
+&none     &none  &none  &none          &none  &none  &mmv MOVE_RIGHT  &none  &none  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &none           &bt BT_CLR_ALL
+&none     &none  &none  &kp BACKSPACE  &none  &none  &mkp LCLK        &none  &none  &none            &rgb_ug RGB_OFF  &rgb_ug RGB_ON
             >;
 
             sensor-bindings = <&scroll_encoder>;
