@@ -4,8 +4,11 @@ on:
   push:
     paths:
       - "config/**"
-      - .github/workflows/draw.yml
-      - keymap_drawer.config.yaml
+      - ".github/workflows/draw.yml"
+      - "keymap_drawer.config.yaml"
+      - ".keymap_drawer/**"
+      - "boards/arm/eyelash_sofle/**"
+
 
 jobs:
   draw:
