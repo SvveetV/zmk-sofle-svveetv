@@ -1,4 +1,7 @@
-include_paths:
-  - "boards/arm/eyelash_sofle/eyelash_sofle.keymap"
+keymap_yaml_args:
+  paths:
+    - boards/arm/eyelash_sofle/eyelash_sofle.keymap
 
-output_path: "drawings/keymap.svg"
+draw_config:
+  output_folder: keymap-drawer
+  output_basename: eyelash_sofle
