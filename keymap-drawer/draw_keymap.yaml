@@ -1,0 +1,4 @@
+include_paths:
+  - "boards/arm/eyelash_sofle/eyelash_sofle.keymap"
+
+output_path: "drawings/keymap.svg"
